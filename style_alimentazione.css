@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+.intro-paragrafo {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 35px;
+    color:#666;
+}
+
+
+.alimentazione {
+    padding: 60px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.alimentazione h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #6c5ce7;
+}
+
+.fase {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+    text-align: left;
+}
+
+.fase::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    background: #6c5ce7;
+    border-radius: 50%;
+}
+
+.fase .etichetta {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #6c5ce7;
+    margin-bottom: 10px;
+}
+
+.fase p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.fase:hover{
+    transform: scale(1.03);
+}
